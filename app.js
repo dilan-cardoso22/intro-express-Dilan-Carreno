@@ -13,17 +13,12 @@ app.get("/", (_, res) => {
 });
 
 app.get("/productos", (req, res)=>{
-    res.send(`<h1> listado de productos</h1>
+    res.send(`<h1> listado de productos</h1>)
     <ol>
         <li>Televisor</li>
         <li>Celular</li>
         <li>Impresora</li>
         </ol>`)
-})
-
-app.get("/productos/nombre", (req,res)=>{
-    producto = req.params.nombre
-    res.send(`El producto es ${producto}`)
 })
 app.listen(port, () => {
     console.log(`Servidor en funcionamiento en el puerto: ${port}`);
